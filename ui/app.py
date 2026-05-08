@@ -196,6 +196,9 @@ def load_alerts_history():
         LIMIT 300
         """
     )
+
+
+def render_kpi(title, value, help_text=None):
     st.metric(title, value, help=help_text)
 
 def safe_float(value, digits=2):
